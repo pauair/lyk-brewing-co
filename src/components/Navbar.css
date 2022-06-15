@@ -1,0 +1,9 @@
+.Navbar {
+    display: flex;
+}
+
+.item-menu {
+    padding: 3em;
+    list-style: none;
+    text-decoration: none;
+}
