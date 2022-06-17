@@ -1,9 +1,17 @@
+.header {
+    background-color: aqua;
+    align-content: center;
+}
+
 .Navbar {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    background-color: black;
+    justify-items: center;
 }
 
 .item-menu {
-    padding: 3em;
     list-style: none;
     text-decoration: none;
+    align-self: center;
 }
