@@ -1,8 +1,12 @@
+import ItemCount from './ItemCount';
 import './ItemListContainer.css';
 
 function ItemListContainer() {
   return (
-    <h3 className="container">LYK BREWING CO.</h3>
+    <div>
+      <h3 className="container">LYK BREWING CO.</h3>
+      <ItemCount stock="5" initial="1" />
+    </div>
   );
 }
 
