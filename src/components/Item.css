@@ -1,0 +1,8 @@
+.cardBody {
+    background-color: black;
+}
+
+.cardName, .cardInfo {
+    font-size: large;
+    color: white;
+}
