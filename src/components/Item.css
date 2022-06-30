@@ -1,8 +1,30 @@
 .cardBody {
+    float: left;
     background-color: black;
+    width: 20vw;
+    height: 25vw;
+    margin: 1vw;
 }
 
-.cardName, .cardInfo {
-    font-size: large;
+.cardImg {
+    width: 8vw;
+    height: 12vw;
+    margin: 1vw;
+}
+
+.cardName {
+    font-size: 1.5vw;
+    text-transform: uppercase;
+} 
+
+.cardPrice {
+    font-size: 1.2vw;
     color: white;
+}
+
+.cardBtn {
+    width: 10vw;
+    height: 2.5vw;
+    background-color: black;
+    border-color: rgb(176, 138, 0);
 }

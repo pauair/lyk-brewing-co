@@ -7,7 +7,8 @@
     "volAlc": "7,0%",
     "precio": 150,
     "stock": 60,
-    "moneda": "UYU"
+    "moneda": "UYU",
+    "img": "ipa.png"
   },
   {
     "id": 2,
@@ -17,7 +18,8 @@
     "volAlc": "5,7%",
     "precio": 140,
     "stock": 80,
-    "moneda": "UYU"
+    "moneda": "UYU",
+    "img": "blonde.png"
   },
   {
     "id": 3,
@@ -27,7 +29,8 @@
     "volAlc": "6,4%",
     "precio": 140,
     "stock": 70,
-    "moneda": "UYU"
+    "moneda": "UYU",
+    "img": "red.png"
   },
   {
     "id": 4,
@@ -37,7 +40,8 @@
     "volAlc": "7,5%",
     "precio": 160,
     "stock": 90,
-    "moneda": "UYU"
+    "moneda": "UYU",
+    "img": "black.png"
   },
   {
     "id": 5,
@@ -47,7 +51,8 @@
     "volAlc": "7,5%",
     "precio": 450,
     "stock": 30,
-    "moneda": "UYU"
+    "moneda": "UYU",
+    "img": "pack-deg.png"
   }
 
 ]
