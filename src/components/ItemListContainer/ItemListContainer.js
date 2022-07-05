@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import ItemList from './ItemList';
+import ItemList from '../ItemList/ItemList';
 import './ItemListContainer.css';
 
 function ItemListContainer() {
@@ -17,7 +17,7 @@ function ItemListContainer() {
   return (
     <div>
       <h3 className="container">NUESTROS PRODUCTOS</h3>
-        <ItemList listaProd={productos}/>
+      <ItemList listaProd={productos}/>
     </div>
   );
 }

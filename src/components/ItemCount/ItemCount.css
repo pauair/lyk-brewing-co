@@ -11,8 +11,9 @@
 .itemCountInput, .itemCountButton, .itemCountButtonAdd {
     background-color: black;
     text-align: center;
-    font-weight: bold;
     align-self: center;
+    font-size: 0.9vw;
+    font-weight: 500;
 }
 
 .itemCountButton, .itemCountButtonAdd {

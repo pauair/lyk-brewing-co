@@ -3,7 +3,7 @@
     align-content: center;
 }
 
-.Navbar {
+.navbar {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     background-color: black;
@@ -13,5 +13,7 @@
 .item-menu {
     list-style: none;
     text-decoration: none;
+    text-transform: uppercase;
     align-self: center;
+    font-size: 1.2vw;
 }

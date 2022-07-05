@@ -1,0 +1,58 @@
+.cardBodyDetail {
+    background-color: black;
+    border-radius: 3vw;
+    width: 45vw;
+    height: 30vw;
+    margin: 2vw;
+    padding: 3vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 2fr repeat(3, 1fr);
+    justify-items: center;
+}
+
+.cardImgDetail {
+    height: 25vw;
+    margin: 1vw;
+    grid-column: 1;
+    grid-row: 1/6;
+    align-self: center;
+}
+
+.cardNameDetail {
+    margin: 1vw;
+    font-size: 1.8vw;
+    text-transform: uppercase;
+    grid-column: 2;
+    align-self: flex-end;
+}
+
+.cardDescriptionDetail {
+    font-size: 1.1vw;
+    font-style: oblique;
+    color: white;
+    grid-column: 2;
+    align-self: center;
+}
+
+.cardSpecsDetail,
+.cardPriceDetail {
+    margin: 0.8vw;
+    text-transform: uppercase;
+    grid-column: 2;
+}
+
+.cardSpecsDetail {
+    color: white;
+    font-size: 1.2vw;
+}
+.cardPriceDetail {
+    font-weight: bold;
+    color: goldenrod;
+    font-size: 1.3vw;
+    align-self: flex-start;
+}
+
+.cardItemCount {
+    grid-column: 2;
+}

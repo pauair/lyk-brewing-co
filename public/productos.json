@@ -6,7 +6,7 @@
     "amargor": "5/5",
     "volAlc": "7,0%",
     "precio": 150,
-    "stock": 60,
+    "stock": 6,
     "moneda": "UYU",
     "img": "ipa.png"
   },
@@ -17,7 +17,7 @@
     "amargor": "1/5",
     "volAlc": "5,7%",
     "precio": 140,
-    "stock": 80,
+    "stock": 8,
     "moneda": "UYU",
     "img": "blonde.png"
   },
@@ -28,7 +28,7 @@
     "amargor": "2/5",
     "volAlc": "6,4%",
     "precio": 140,
-    "stock": 70,
+    "stock": 5,
     "moneda": "UYU",
     "img": "red.png"
   },
@@ -38,7 +38,7 @@
     "descripcion": "Cerveza oscura, con intenso aroma a café. En boca presenta un sabor complejo otorgado por la mezcla de maltas tostadas con un final cálido que nos deja la alta graduación alcohólica.",
     "amargor": "4/5",
     "volAlc": "7,5%",
-    "precio": 160,
+    "precio": 6,
     "stock": 90,
     "moneda": "UYU",
     "img": "black.png"
@@ -50,7 +50,7 @@
     "amargor": "4/5",
     "volAlc": "7,5%",
     "precio": 450,
-    "stock": 30,
+    "stock": 3,
     "moneda": "UYU",
     "img": "pack-deg.png"
   }
