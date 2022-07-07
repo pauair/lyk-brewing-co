@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": "1",
     "nombre": "Cerveza Ipa",
     "descripcion": "Cerveza dorada opalescente, con marcadas notas a lúpulo en aroma y sabor. Deleita con sus notas a pomelo, limón y sutiles toques especiados. Con un amargor pronunciado pero elegante y fácil de tomar.",
     "amargor": "5/5",
@@ -8,10 +8,11 @@
     "precio": 150,
     "stock": 6,
     "moneda": "UYU",
-    "img": "ipa.png"
+    "img": "ipa.png",
+    "categoria": "rubia"
   },
   {
-    "id": 2,
+    "id": "2",
     "nombre": "Cerveza Blonde",
     "descripcion": "Cerveza dorada de cuerpo pleno, con un balance perfecto entre malta y lúpulo, brindando notas a miel y pan en boca.",
     "amargor": "1/5",
@@ -19,10 +20,11 @@
     "precio": 140,
     "stock": 8,
     "moneda": "UYU",
-    "img": "blonde.png"
+    "img": "blonde.png",
+    "categoria": "rubia"
   },
   {
-    "id": 3,
+    "id": "3",
     "nombre": "Cerveza Red",
     "descripcion": "Cerveza roja, madurada con roble, vainilla y bourbon. Profundo aroma a vainilla, intensa en boca donde se mezclan el dulzor de la malta caramelo con el sabor y el calor del bourbon.",
     "amargor": "2/5",
@@ -30,21 +32,23 @@
     "precio": 140,
     "stock": 5,
     "moneda": "UYU",
-    "img": "red.png"
+    "img": "red.png",
+    "categoria": "roja"
   },
   {
-    "id": 4,
+    "id": "4",
     "nombre": "Cerveza Black",
     "descripcion": "Cerveza oscura, con intenso aroma a café. En boca presenta un sabor complejo otorgado por la mezcla de maltas tostadas con un final cálido que nos deja la alta graduación alcohólica.",
     "amargor": "4/5",
     "volAlc": "7,5%",
-    "precio": 6,
-    "stock": 90,
+    "precio": 160,
+    "stock": 9,
     "moneda": "UYU",
-    "img": "black.png"
+    "img": "black.png",
+    "categoria": "negra"
   },
   {
-    "id": 5,
+    "id": "5",
     "nombre": "Pack degustación",
     "descripcion": "Presentamos esta excelente oportunidad para probar todas nuestras variedades.",
     "amargor": "4/5",
@@ -52,7 +56,8 @@
     "precio": 450,
     "stock": 3,
     "moneda": "UYU",
-    "img": "pack-deg.png"
+    "img": "pack-deg.png",
+    "categoria": ""
   }
 
 ]

@@ -26,7 +26,7 @@ function ItemCount({stock, initial, onAdd}) {
     }
 
     const addToCart = () => {
-        if (num == 0 && stock == 0) {
+        if (num === 0 && stock === 0) {
             Swal.fire({
                 position: 'center',
                 icon: 'error',
