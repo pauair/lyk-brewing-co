@@ -1,22 +1,35 @@
 import { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
+import './ItemListContainer.css';
 import ItemList from '../ItemList/ItemList';
 import loading from '../../assets/loading.png';
-import './ItemListContainer.css';
 
 function ItemListContainer() {
 
   const [productos, setProductos] = useState([])
   const [isLoading, setIsLoading] = useState(false)
+  const { cat } = useParams()
 
-  useEffect(()=> {
-    setIsLoading(true)
-    setTimeout(()=>{
-      fetch('productos.json')
-      .then((resp) => resp.json())
-      .then((data) => setProductos(data))
-      setIsLoading(false)
-    }, 2000)
-  }, [])
+    useEffect(()=> {
+      if (cat === "all") {
+        setIsLoading(true)
+        setTimeout(()=>{
+          fetch('../../productos.json')
+          .then((resp) => resp.json())
+          .then((data) => setProductos(data))
+          setIsLoading(false)
+        }, 2000)
+    } else {
+      setIsLoading(true)
+      setTimeout(()=>{
+        fetch('../../productos.json')
+        .then((resp) => resp.json())
+        .then((data) => setProductos(data.filter((i) => (i.categoria === cat))))
+        setIsLoading(false)
+      }, 2000)
+    }}, [])
+
+  console.log(cat)
 
   return (
     <div>

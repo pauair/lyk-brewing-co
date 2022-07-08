@@ -1,24 +1,11 @@
-.header {
-    align-content: center;
-}
-
-.navbar {
+.nav-cat {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     background-color: black;
     justify-items: center;
 }
 
-.logo {
-    width: 10vw;
-    height: 10vw;
-  }
-
-.item-logo {
-    align-self: center;
-}
-
-.item-menu {
+.item-menu-cat {
     list-style: none;
     text-decoration: none;
     text-transform: uppercase;

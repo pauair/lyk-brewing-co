@@ -1,11 +1,12 @@
 import './Products.css'
+import NavCat from '../../components/NavCat/NavCat';
 import ItemListContainer from '../../components/ItemListContainer/ItemListContainer';
 
 function Products() {
     return (
       <div>
-        <h2 className='title'>PRODUCTOS</h2>
-        <ItemListContainer />
+        <NavCat/>
+        <ItemListContainer/>
       </div>
     );
   }

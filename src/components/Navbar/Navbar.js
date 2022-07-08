@@ -10,7 +10,7 @@ function Navbar() {
         <ul className="navbar">
           <NavLink to='/' className="item-logo"> <img src={logo} alt="logo" className="logo"/> </NavLink>
           <NavLink to='/about' className='item-menu'> Nosotros </NavLink>
-          <NavLink to='/products' className='item-menu'> Productos </NavLink>
+          <NavLink to='/products/category/all' className='item-menu'> Productos </NavLink>
           <NavLink to='/visit' className='item-menu'> Visita </NavLink>
           <NavLink to='/contact' className='item-menu'> Contacto </NavLink>
           <CartWidget/>
