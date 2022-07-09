@@ -5,7 +5,7 @@ import ItemListContainer from '../../components/ItemListContainer/ItemListContai
 function Products() {
     return (
       <div>
-        <NavCat/>
+        <NavCat />
         <ItemListContainer/>
       </div>
     );

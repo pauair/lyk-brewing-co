@@ -1,13 +1,12 @@
-import { Routes, Route} from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
-import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
-import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
+import Products from './pages/Products/Products';
 import Home from './pages/Home/Home';
 import AboutUs from './pages/AboutUs/AboutUs';
-import Products from './pages/Products/Products';
-import Visit from './pages/Visit/Visit';
 import Contact from './pages/Contact/Contact';
+import Visit from './pages/Visit/Visit';
 
 function App() {
   return (
@@ -15,12 +14,12 @@ function App() {
       <header>
         <Navbar />
           <Routes>
-            <Route path="/" element={<Home/>}> </Route>
-            <Route path="/about" element={<AboutUs/>}> </Route>
-            <Route path="/products/:id" element={<ItemDetailContainer/>}> </Route>
-            <Route path="/products/category/:cat" element={<Products/>}> </Route>
-            <Route path="/visit" element={<Visit/>}> </Route>
-            <Route path="/contact" element={<Contact/>}> </Route>
+            <Route exact path="/" element={<Home/>}> </Route>
+            <Route exact path="/about" element={<AboutUs/>}> </Route>
+            <Route exact path="/products/:id" element={<ItemDetailContainer/>}> </Route>
+            <Route exact path="/products/category/:cat" element={<Products/>}> </Route>
+            <Route exact path="/visit" element={<Visit/>}> </Route>
+            <Route exact path="/contact" element={<Contact/>}> </Route>
           </Routes>
       </header>
     </div>

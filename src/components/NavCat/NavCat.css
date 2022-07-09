@@ -3,6 +3,8 @@
     grid-template-columns: repeat(4, 1fr);
     background-color: black;
     justify-items: center;
+    align-items: center;
+    margin: 0.2vw;
 }
 
 .item-menu-cat {
@@ -10,5 +12,5 @@
     text-decoration: none;
     text-transform: uppercase;
     align-self: center;
-    font-size: 1.2vw;
+    font-size: 1vw;
 }

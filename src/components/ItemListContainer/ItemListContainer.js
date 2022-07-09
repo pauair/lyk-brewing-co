@@ -3,7 +3,6 @@ import { useParams } from 'react-router-dom';
 import './ItemListContainer.css';
 import ItemList from '../ItemList/ItemList';
 import loading from '../../assets/loading.png';
-
 function ItemListContainer() {
 
   const [productos, setProductos] = useState([])
@@ -11,23 +10,20 @@ function ItemListContainer() {
   const { cat } = useParams()
 
     useEffect(()=> {
-      if (cat === "all") {
-        setIsLoading(true)
-        setTimeout(()=>{
+      setIsLoading(true)
+      setTimeout(()=> {
+        if (cat === "all") {
           fetch('../../productos.json')
           .then((resp) => resp.json())
           .then((data) => setProductos(data))
-          setIsLoading(false)
-        }, 2000)
-    } else {
-      setIsLoading(true)
-      setTimeout(()=>{
-        fetch('../../productos.json')
-        .then((resp) => resp.json())
-        .then((data) => setProductos(data.filter((i) => (i.categoria === cat))))
+        } else {
+          fetch('../../productos.json')
+          .then((resp) => resp.json())
+          .then((data) => setProductos(data.filter((i) => (i.categoria === cat))))
+        }
         setIsLoading(false)
       }, 2000)
-    }}, [])
+    }, [])
 
   console.log(cat)
 
