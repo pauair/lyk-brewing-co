@@ -7,6 +7,7 @@ import Home from './pages/Home/Home';
 import AboutUs from './pages/AboutUs/AboutUs';
 import Contact from './pages/Contact/Contact';
 import Visit from './pages/Visit/Visit';
+import Cart from './components/Cart/Cart';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route exact path="/products/category/:cat" element={<Products/>}> </Route>
             <Route exact path="/visit" element={<Visit/>}> </Route>
             <Route exact path="/contact" element={<Contact/>}> </Route>
+            <Route exact path="/cart" element={<Cart/>}> </Route>
           </Routes>
       </header>
     </div>

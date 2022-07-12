@@ -1,13 +1,15 @@
 import { useState } from 'react';
 import Swal from 'sweetalert2'
+import ItemDetail from '../ItemDetail/ItemDetail';
 import './ItemCount.css';
 
-function ItemCount({stock, initial, onAdd}) {
-    const [num, setNum] = useState(0)
+function ItemCount({stock}) {
+
+    const [qty, setQty] = useState(0)
 
     const suma = () => {
-        if (num < stock) {
-            setNum(num + 1)
+        if (qty < stock) {
+            setQty(qty + 1)
         } else {
             Swal.fire({
                 position: 'center',
@@ -20,13 +22,13 @@ function ItemCount({stock, initial, onAdd}) {
     }
 
     const resta = () => {
-        if (num > 0) {
-            setNum(num - 1)
+        if (qty > 0) {
+            setQty(qty - 1)
         } 
     }
 
-    const addToCart = () => {
-        if (num === 0 && stock === 0) {
+    const onAddHandler = () => {
+        if (qty === 0 && stock === 0) {
             Swal.fire({
                 position: 'center',
                 icon: 'error',
@@ -35,15 +37,15 @@ function ItemCount({stock, initial, onAdd}) {
                 timer: 1500
               })
         } else {
-            if (num >0) {
+            if (qty >0) {
                 Swal.fire({
                     position: 'center',
                     icon: 'success',
-                    text: `Has agregado ${num} unidades al carrito`,
+                    text: `Has agregado ${qty} unidades al carrito`,
                     showConfirmButton: false,
                     timer: 1500
                 })
-                console.log(`Se agregan ${num} unidades al carrito`)
+
             } else {
                 Swal.fire({
                     position: 'center',
@@ -59,9 +61,9 @@ function ItemCount({stock, initial, onAdd}) {
     return (
         <div className='itemCount'>
             <button className='itemCountButton' onClick={resta}> - </button>
-            <p className='itemCountInput'>{num}</p>
+            <p className='itemCountInput'>{qty}</p>
             <button className='itemCountButton' onClick={suma}> + </button>
-            <button className='itemCountButtonAdd' onClick={addToCart}> Agregar al carrito</button>
+            <button className='itemCountButtonAdd' onClick={onAddHandler}> Agregar al carrito </button>
         </div>
     );
   }
