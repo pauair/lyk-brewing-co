@@ -1,11 +1,11 @@
 .loading {
     margin: 2vw;
-    font-size: 1vw;
+    font-size: 0.8vw;
     color: black;
     text-align: center;
 }
 
 .loadingImg {
-    height: auto;
-    width: auto;
+    height: 4vw;
+    width: 4vw;
 }

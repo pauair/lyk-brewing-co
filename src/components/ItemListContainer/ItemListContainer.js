@@ -1,15 +1,16 @@
 import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams} from 'react-router-dom';
 import './ItemListContainer.css';
 import ItemList from '../ItemList/ItemList';
 import loading from '../../assets/loading.png';
+
 function ItemListContainer() {
 
+  const { cat } = useParams()
   const [productos, setProductos] = useState([])
   const [isLoading, setIsLoading] = useState(false)
-  const { cat } = useParams()
 
-    useEffect(()=> {
+  useEffect(()=> {
       setIsLoading(true)
       setTimeout(()=> {
         if (cat === "all") {
@@ -22,10 +23,8 @@ function ItemListContainer() {
           .then((data) => setProductos(data.filter((i) => (i.categoria === cat))))
         }
         setIsLoading(false)
-      }, 2000)
-    }, [])
-
-  console.log(cat)
+      }, 1000)
+  }, [cat])
 
   return (
     <div>

@@ -3,9 +3,10 @@ import NavCat from '../../components/NavCat/NavCat';
 import ItemListContainer from '../../components/ItemListContainer/ItemListContainer';
 
 function Products() {
+
     return (
       <div>
-        <NavCat />
+        <NavCat/>
         <ItemListContainer/>
       </div>
     );

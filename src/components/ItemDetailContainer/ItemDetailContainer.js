@@ -17,7 +17,7 @@ function ItemDetailContainer() {
       .then((resp) => resp.json())
       .then((data) => setProducto(data.filter((i) => (i.id === id))))
       setIsLoading(false)
-    }, 2000)
+    }, 1000)
   }, [])
 
   return (
