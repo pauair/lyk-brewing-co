@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
+import { CartProvider } from './components/CartContext/CartContext';
 import Navbar from './components/Navbar/Navbar';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import Products from './pages/Products/Products';
@@ -12,6 +13,7 @@ import Cart from './components/Cart/Cart';
 function App() {
   return (
     <div className="App">
+      <CartProvider>
       <header>
         <Navbar />
           <Routes>
@@ -24,6 +26,7 @@ function App() {
             <Route exact path="/cart" element={<Cart/>}> </Route>
           </Routes>
       </header>
+      </CartProvider>
     </div>
   );
 }

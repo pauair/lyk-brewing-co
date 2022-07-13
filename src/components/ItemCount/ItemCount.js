@@ -1,9 +1,8 @@
 import { useState } from 'react';
 import Swal from 'sweetalert2'
-import ItemDetail from '../ItemDetail/ItemDetail';
 import './ItemCount.css';
 
-function ItemCount({stock}) {
+function ItemCount({stock, onAdd}) {
 
     const [qty, setQty] = useState(0)
 
@@ -45,6 +44,7 @@ function ItemCount({stock}) {
                     showConfirmButton: false,
                     timer: 1500
                 })
+                onAdd(qty)
 
             } else {
                 Swal.fire({
