@@ -1,0 +1,11 @@
+.cart-view {
+    padding: 3vw;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+}
+
+.cart-detail {
+    background-color: black;
+}

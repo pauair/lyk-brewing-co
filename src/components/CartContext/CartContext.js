@@ -35,11 +35,26 @@ export const CartProvider = ({defaultValue = [], children}) => {
         setCart(newCart)
     }
 
+    const totalQty = () => {
+        let quantity = 0
+        cart.forEach((i) => (quantity += i.qty));
+        console.log(quantity)
+        return quantity
+    }
+
+    const totalPrice = () => {
+        let total = 0
+        cart.forEach((i) => (total = total + i.item.price * i.qty))
+        return total
+    }
+
     const context = {
         cart,
         clearCart,
         addToCart,
-        removeFromCart
+        removeFromCart,
+        totalQty,
+        totalPrice
     }
 
     return (

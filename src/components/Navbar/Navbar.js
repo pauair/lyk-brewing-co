@@ -13,7 +13,7 @@ function Navbar() {
           <NavLink to='/products/category/all' className='item-menu'> Productos </NavLink>
           <NavLink to='/visit' className='item-menu'> Visita </NavLink>
           <NavLink to='/contact' className='item-menu'> Contacto </NavLink>
-          <CartWidget/>
+          <NavLink to='/cart'><CartWidget/></NavLink>
         </ul>
       </nav>
     </header>
