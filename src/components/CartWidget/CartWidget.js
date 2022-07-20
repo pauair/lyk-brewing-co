@@ -1,5 +1,5 @@
 import './CartWidget.css';
-import { useContext, useEffect, useState } from 'react';
+import { useContext } from 'react';
 import cartImg from '../../assets/cartImg.png'
 import { CartContext } from '../CartContext/CartContext';
 
