@@ -3,6 +3,7 @@ import ItemDetail from '../ItemDetail/ItemDetail';
 import loading from '../../assets/loading.png';
 import './ItemDetailContainer.css';
 import { useParams } from 'react-router-dom';
+import { getAllProducts } from '../../services/FirebaseConfig';
 
 function ItemDetailContainer() {
 
@@ -13,15 +14,13 @@ function ItemDetailContainer() {
   useEffect(()=> {
     setIsLoading(true)
     setTimeout(()=> {
-      fetch('../productos.json')
-      .then((resp) => resp.json())
-      .then((data) => setProducto(data.filter((i) => (i.id === id))))
+      getAllProducts().then((data) => setProducto((data).filter((i) => (i.id === id))))
       setIsLoading(false)
-    }, 1000)
+    }, 500)
   }, [])
 
   return (
-    <div className='container'>
+    <div className='item-detail-container'>
       {isLoading && <div className='container'><img src={loading} alt='loading' className='loadingImg'/> <p className='loading'> Loading... </p> </div>}
       {producto && producto.map((p)=> <ItemDetail key={p.id} id={p.id} nombre={p.nombre} precio={p.precio} moneda={p.moneda} img={p.img} volAlc={p.volAlc} amargor={p.amargor} descripcion={p.descripcion} stock={p.stock} />)}
     </div>

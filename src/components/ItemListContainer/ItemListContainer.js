@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useParams} from 'react-router-dom';
+import { getAllProducts } from '../../services/FirebaseConfig.js'
 import './ItemListContainer.css';
 import ItemList from '../ItemList/ItemList';
 import loading from '../../assets/loading.png';
@@ -11,20 +12,16 @@ function ItemListContainer() {
   const [isLoading, setIsLoading] = useState(false)
 
   useEffect(()=> {
-      setIsLoading(true)
-      setTimeout(()=> {
-        if (cat === "all") {
-          fetch('../../productos.json')
-          .then((resp) => resp.json())
-          .then((data) => setProductos(data))
-        } else {
-          fetch('../../productos.json')
-          .then((resp) => resp.json())
-          .then((data) => setProductos(data.filter((i) => (i.categoria === cat))))
-        }
-        setIsLoading(false)
-      }, 1000)
-  }, [cat])
+        setIsLoading(true)
+        setTimeout(()=> {
+          if (cat === "all") {
+            getAllProducts().then((data) => setProductos(data))
+          } else {
+            getAllProducts().then((data) => setProductos(data.filter((i) => (i.categoria === cat))))
+          }
+          setIsLoading(false)
+        }, 500)
+    }, [cat])
 
   return (
     <div>
