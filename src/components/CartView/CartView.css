@@ -19,15 +19,23 @@
 }
 
 .cart-view-total {
+    border-color: black;
+    border-style: double;
     color: black;
-    padding: 4vw;
+    margin: 4vw;
+    padding: 0.8vw;
     font-weight: bold;
     justify-self: right;
 }
 
 .cart-view-btn {
-    width: 10vw;
+    width: 13vw;
     height: 2.5vw;
+    margin: 1vw;
     background-color: black;
     border-color: rgb(176, 138, 0);
+}
+
+.cart-view-clear-btn {
+    background-color: rgb(99, 99, 99);
 }

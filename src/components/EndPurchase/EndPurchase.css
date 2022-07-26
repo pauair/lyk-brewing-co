@@ -1,0 +1,38 @@
+.title {
+    color: black;
+    text-align: center;
+    padding: 3vw;
+}
+
+.end-purchase-div {
+    text-align: center;
+}
+
+.end-purchase-form {
+    display: inline-block;
+    border-radius: 1vw;
+    padding: 7vw;
+    background-color: black;
+    width: 30%;
+    height: 25%;
+}
+
+.end-purchase-form-label {
+    display: block;
+    text-align: left;
+    padding: 1vw;
+}
+
+.end-purchase-form-input {
+    margin-bottom: 2vw;
+    padding: 0.8vw;
+    width: 85%;
+}
+
+.end-purchase-form-btn {
+    width: 40%;
+    height: 2.5vw;
+    margin: 1.5vw;
+    background-color: black;
+    border-color: rgb(176, 138, 0);
+}

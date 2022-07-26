@@ -9,6 +9,7 @@ import AboutUs from './pages/AboutUs/AboutUs';
 import Contact from './pages/Contact/Contact';
 import Visit from './pages/Visit/Visit';
 import CartView from './components/CartView/CartView';
+import EndPurchase from './components/EndPurchase/EndPurchase';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route exact path="/visit" element={<Visit/>}> </Route>
             <Route exact path="/contact" element={<Contact/>}> </Route>
             <Route path="/cart" element={<CartView/>}> </Route>
+            <Route path="/endPurchase" element={<EndPurchase/>}> </Route>
           </Routes>
       </header>
       </CartProvider>

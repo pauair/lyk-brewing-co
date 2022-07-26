@@ -1,6 +1,7 @@
 import './CartView.css';
 import CartItem from '../CartItem/CartItem';
 import { useContext, useEffect, useState } from 'react';
+import { Link } from 'react-router-dom' ;
 import { CartContext } from '../CartContext/CartContext';
 
 function CartView() {
@@ -21,7 +22,10 @@ function CartView() {
             {isCartEmpty && <p className='cart-view-empty'> Tu carrito está vacio. Agrega productos para verlos aquí.</p>}
             {!isCartEmpty && cart.map((i) => <CartItem key={i.item.id} id={i.item.id} nombre={i.item.nombre} precio={i.item.precio} moneda={i.item.moneda} img={i.item.img} qty={i.qty}/>)}
             {!isCartEmpty && <p className='cart-view-total'>TOTAL: {totalPrice()} UYU</p>}
-            {!isCartEmpty && <button className='cart-view-btn' onClick={clearCart}>Vaciar carrito</button>}
+            <div className='cart-view-div-btn'>
+                {!isCartEmpty && <button className='cart-view-btn cart-view-clear-btn' onClick={clearCart}>Vaciar carrito</button>}
+                {!isCartEmpty && <Link to="/endPurchase"><button className='cart-view-btn'>Finalizar compra</button></Link>}
+            </div>
         </div>
     )
 }
