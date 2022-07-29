@@ -7,6 +7,7 @@ const {Provider} = CartContext
 export const CartProvider = ({defaultValue = [], children}) => {
 
     const [cart, setCart] = useState(defaultValue)
+    const [total, setTotal] = useState(0)
 
     const clearCart = () => {
         setCart([])
@@ -45,16 +46,18 @@ export const CartProvider = ({defaultValue = [], children}) => {
     const totalPrice = () => {
         let total = 0
         cart.forEach((i) => (total = total + (i.item.precio)*(i.qty)))
+        setTotal(total)
         return total
     }
 
     const context = {
         cart,
+        total,
         clearCart,
         addToCart,
         removeFromCart,
         totalQty,
-        totalPrice
+        totalPrice,
     }
 
     return (
