@@ -3,7 +3,7 @@ import { useParams} from 'react-router-dom';
 import { getAllProducts } from '../../services/FirebaseConfig.js'
 import './ItemListContainer.css';
 import ItemList from '../ItemList/ItemList';
-import loading from '../../assets/loading.png';
+import loading from '../../assets/loading.gif';
 
 function ItemListContainer() {
 

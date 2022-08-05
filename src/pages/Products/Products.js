@@ -1,14 +1,18 @@
 import './Products.css'
 import NavCat from '../../components/NavCat/NavCat';
 import ItemListContainer from '../../components/ItemListContainer/ItemListContainer';
+import Footer from '../../components/Footer/Footer';
 
 function Products() {
 
     return (
-      <div>
+      <>
         <NavCat/>
-        <ItemListContainer/>
-      </div>
+        <div className='products-container'>
+          <ItemListContainer/>
+        </div>
+        <Footer/>
+      </>
     );
   }
   

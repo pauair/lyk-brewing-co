@@ -39,7 +39,6 @@ export const CartProvider = ({defaultValue = [], children}) => {
     const totalQty = () => {
         let quantity = 0
         cart.forEach((i) => (quantity += i.qty));
-        console.log(quantity)
         return quantity
     }
 

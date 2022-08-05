@@ -1,0 +1,17 @@
+.footer-container {
+    background-color: black;
+    padding: 2vw;
+    font-size: 1vw;
+    text-align: center;
+    justify-content: center;
+}
+
+.footer-div-img {
+    justify-items: center;
+}
+
+.footer-img {
+    margin: 1vw;
+    width: 2.5vw;
+    height: 2.5vw;
+}

@@ -1,31 +1,20 @@
-import { useState, useContext } from 'react';
+import { useState, useContext, useEffect } from 'react';
 import Swal from 'sweetalert2'
-import { initializeApp } from "firebase/app";
-import { collection, getFirestore, addDoc, doc } from "firebase/firestore";
-import { CartContext, CartProvider } from '../CartContext/CartContext';
+import { collection, addDoc, doc} from "firebase/firestore";
+import { db } from "../../services/FirebaseConfig"
+import { CartContext} from '../CartContext/CartContext';
 import './EndPurchase.css'
-import { useCallback } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function EndPurchase() {
 
-    const firebaseConfig = {
-        apiKey: "AIzaSyDpqtYSx38UNpjpzgScE8j7AZIUQou77Ok",
-        authDomain: "lyk-brewing-co.firebaseapp.com",
-        projectId: "lyk-brewing-co",
-        storageBucket: "lyk-brewing-co.appspot.com",
-        messagingSenderId: "245154058584",
-        appId: "1:245154058584:web:e3a26e60c1e949283b952d",
-        measurementId: "G-P4KQL49R54"
-    };
-    const app = initializeApp(firebaseConfig);
-    const db = getFirestore(app)
-
-    const { total, cart } = useContext(CartContext)
+    let navigate = useNavigate()
+    const { total, cart, clearCart } = useContext(CartContext)
 
     const [newName, setNewName] = useState("")
     const [newPhone, setNewPhone] = useState("")
     const [newEmail, setNewEmail] = useState("")
-    const [orderId, setOrderId] = useState()
+    const [orderId, setOrderId] = useState("")
 
     const nameHandler = (event) => {
         setNewName(event.target.value)
@@ -39,7 +28,7 @@ function EndPurchase() {
         setNewEmail(event.target.value)
     }
 
-    const submitHandler = (event)=> {
+    const submitHandler = (event) => {
         event.preventDefault();
         const ordersCollections = collection(db, "orders")
         const newBuyer = {
@@ -51,20 +40,39 @@ function EndPurchase() {
             buyer: newBuyer,
             total: total,
             items: cart,
-            date: "1"
+            date: Date(),
         }
-        addDoc(ordersCollections, order).then((doc) => setOrderId(doc.id));
-        Swal.fire({
-            position: 'center',
-            icon: 'success',
-            text: `Gracias por tu compra ${order.buyer.name}`,
-            showConfirmButton: false,
-            timer: 1500
-        })
-        setNewName("")
-        setNewPhone("")
-        setNewEmail("")
+        if (newName && newPhone && newEmail) {
+            addDoc(ordersCollections, order).then((doc) => setOrderId(doc.id));
+        } else {
+            Swal.fire({
+                position: 'center',
+                icon: 'error',
+                text: `¡Debes completar todos los campos!`,
+                showConfirmButton: false,
+                timer: 4500
+            })
+        }
     }
+
+    useEffect(() => {
+        if (orderId) {
+            Swal.fire({
+                position: 'center',
+                icon: 'success',
+                titleText: `¡Gracias por tu compra ${newName}!`,
+                text: `El código de tu pedido es: ${orderId}`,
+                showConfirmButton: false,
+                timer: 4800
+            })
+            setNewName("")
+            setNewPhone("")
+            setNewEmail("")
+            clearCart()
+            navigate("/")
+        }
+    }, [orderId])
+
 
     return (
         <>

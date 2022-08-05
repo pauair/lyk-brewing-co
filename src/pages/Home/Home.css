@@ -1,5 +1,21 @@
-.title {
-    color: black;
-    text-align: center;
+.home-title {
+    z-index: 2;
+    position: fixed;
+    margin: 10% 0% 0% 21%;
     padding: 3vw;
+    font-size: 4.5vw;
+    color: white;
+    text-align: center;
+}
+
+.home-container {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    text-align: center;
+}
+
+.home-img {
+    opacity: 0.4;
+    width: 100%;
 }

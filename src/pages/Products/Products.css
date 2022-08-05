@@ -1,12 +1,4 @@
-.title {
-    color: black;
-    text-align: center;
-    padding: 3vw;
-}
-
-.navbar {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    background-color: black;
-    justify-items: center;
+.products-container {
+    height: 65vw;
+    background-color: rgb(17, 17, 17);
 }

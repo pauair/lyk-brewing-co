@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react';
 import ItemDetail from '../ItemDetail/ItemDetail';
-import loading from '../../assets/loading.png';
+import loading from '../../assets/loading.gif';
 import './ItemDetailContainer.css';
 import { useParams } from 'react-router-dom';
 import { getAllProducts } from '../../services/FirebaseConfig';
+import Footer from '../Footer/Footer';
 
 function ItemDetailContainer() {
 
@@ -20,10 +21,13 @@ function ItemDetailContainer() {
   }, [])
 
   return (
-    <div className='item-detail-container'>
-      {isLoading && <div className='container'><img src={loading} alt='loading' className='loadingImg'/> <p className='loading'> Loading... </p> </div>}
-      {producto && producto.map((p)=> <ItemDetail key={p.id} id={p.id} nombre={p.nombre} precio={p.precio} moneda={p.moneda} img={p.img} volAlc={p.volAlc} amargor={p.amargor} descripcion={p.descripcion} stock={p.stock} />)}
-    </div>
+    <>
+      <div className='item-detail-container'>
+        {isLoading && <div className='container'><img src={loading} alt='loading' className='loadingImg'/> <p className='loading'> Loading... </p> </div>}
+        {producto && producto.map((p)=> <ItemDetail key={p.id} id={p.id} nombre={p.nombre} precio={p.precio} moneda={p.moneda} img={p.img} volAlc={p.volAlc} amargor={p.amargor} descripcion={p.descripcion} stock={p.stock} />)}
+      </div>
+      <Footer/>
+    </>
   );
 }
 

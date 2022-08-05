@@ -1,12 +1,13 @@
 .item-detail-container {
     display: flex;
     justify-content: center;
+    background-color: rgb(17, 17, 17);
 }
 
 .loading {
     margin: 2vw;
     font-size: 0.8vw;
-    color: black;
+    color: white;
     text-align: center;
 }
 

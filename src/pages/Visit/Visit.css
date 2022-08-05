@@ -1,5 +1,16 @@
-.title {
-    color: black;
+.visit-title {
+    color: white;
     text-align: center;
     padding: 3vw;
+}
+
+.visit-container {
+    text-align: center;
+    height: 40vw;
+    background-color: rgb(17, 17, 17);
+}
+
+.visit-p {
+    color: white;
+    margin: 1.5vw;
 }

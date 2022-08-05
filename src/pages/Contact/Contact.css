@@ -1,5 +1,50 @@
-.title {
-    color: black;
+.contact-title {
+    color: white;
     text-align: center;
     padding: 3vw;
+}
+
+.contact-div {
+    text-align: center;
+    background-color: rgb(17, 17, 17);
+}
+
+.contact-p {
+    color: white;
+}
+
+.contact-form {
+    display: inline-block;
+    border-radius: 1vw;
+    margin: 7vw;
+    padding: 2vw;
+    background-color: black;
+    width: 30%;
+    height: 25%;
+}
+
+.contact-form-label {
+    display: block;
+    text-align: left;
+    padding: 1vw;
+}
+
+.contact-form-input, .contact-form-input-area {
+    margin-bottom: 2vw;
+    padding: 0.8vw;
+    width: 85%;
+    color: black;
+}
+
+.contact-form-input-area {
+    height: 6vw;
+    margin-bottom: 0vw;
+}
+
+.contact-form-btn {
+    width: 40%;
+    height: 2.5vw;
+    margin: 1.5vw;
+    background-color: black;
+    border-color: rgb(176, 138, 0);
 }

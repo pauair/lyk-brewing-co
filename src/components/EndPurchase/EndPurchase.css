@@ -1,20 +1,23 @@
 .title {
-    color: black;
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 3vw;
+    background-color: rgb(17,17,17);
 }
 
 .end-purchase-div {
     text-align: center;
+    background-color: rgb(17,17,17);
 }
 
 .end-purchase-form {
     display: inline-block;
     border-radius: 1vw;
-    padding: 7vw;
     background-color: black;
+    padding: 7vw;
     width: 30%;
     height: 25%;
+    margin-bottom: 2vw;
 }
 
 .end-purchase-form-label {
