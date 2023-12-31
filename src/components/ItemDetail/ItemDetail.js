@@ -16,13 +16,13 @@ function ItemDetail(props) {
 
   return (
     <div className='cardBodyDetail'>
-        <img className='cardImgDetail' src={require(`../../assets/${props.img}`)} alt={props.nombre}/>
-        <h1 className='cardNameDetail'>{props.nombre}</h1>
-        <p className='cardDescriptionDetail'>{props.descripcion}</p>
-        <p className='cardSpecsDetail'>VOL.ALC: {props.volAlc} - AMARGOR: {props.amargor}</p>
-        <p className='cardPriceDetail'>{props.precio} {props.moneda}</p>
+        <img className='cardImgDetail' src={require(`../../assets/${props.img}`)} alt={props.name}/>
+        <h1 className='cardNameDetail'>{props.name}</h1>
+        <p className='cardDescriptionDetail'>{props.description}</p>
+        <p className='cardSpecsDetail'>ABV: {props.abv} - IBU: {props.ibu}</p>
+        <p className='cardPriceDetail'>{props.price} {props.currency}</p>
         {!endPurchase && <div className='cardItemCount'> <ItemCount stock={props.stock} onAdd={onAdd}/> </div>}
-        {endPurchase && <Link to='/cart'><button className='itemCountButtonAdd'>Terminar compra</button></Link>}
+        {endPurchase && <Link to='/cart'><button className='itemCountButtonAdd'>End purchase</button></Link>}
     </div>
   );
 }

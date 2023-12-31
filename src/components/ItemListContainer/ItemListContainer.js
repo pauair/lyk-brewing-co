@@ -8,16 +8,16 @@ import loading from '../../assets/loading.gif';
 function ItemListContainer() {
 
   const { cat } = useParams()
-  const [productos, setProductos] = useState([])
+  const [products, setProducts] = useState([])
   const [isLoading, setIsLoading] = useState(false)
 
   useEffect(()=> {
         setIsLoading(true)
         setTimeout(()=> {
           if (cat === "all") {
-            getAllProducts().then((data) => setProductos(data))
+            getAllProducts().then((data) => setProducts(data))
           } else {
-            getAllProducts().then((data) => setProductos(data.filter((i) => (i.categoria === cat))))
+            getAllProducts().then((data) => setProducts(data.filter((i) => (i.category === cat))))
           }
           setIsLoading(false)
         }, 500)
@@ -26,7 +26,7 @@ function ItemListContainer() {
   return (
     <div>
       {isLoading && <div className='container'><img src={loading} alt='loading' className='loadingImg'/> <p className='loading'> Loading... </p> </div>}
-      <ItemList listaProd={productos}/>
+      <ItemList listProd={products}/>
     </div>
   );
 }

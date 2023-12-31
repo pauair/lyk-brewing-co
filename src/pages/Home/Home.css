@@ -1,11 +1,12 @@
 .home-title {
     z-index: 2;
     position: fixed;
-    margin: 10% 0% 0% 21%;
+    margin: 5% 0% 0% 10%;
     padding: 3vw;
-    font-size: 4.5vw;
+    font-size: 6vw;
     color: white;
     text-align: center;
+    text-shadow: 1px 1px 2px rgb(8, 8, 8), 0 0 1em rgb(65, 65, 65), 0 0 0.2em rgb(83, 83, 83);
 }
 
 .home-container {
@@ -16,6 +17,6 @@
 }
 
 .home-img {
-    opacity: 0.4;
+    opacity: 0.25;
     width: 100%;
 }

@@ -4,7 +4,10 @@
     background-color: black;
     justify-items: center;
     align-items: center;
-    margin: 0.2vw;
+    margin-top: 0.05vw;
+    margin-bottom: 0.05vw;
+    padding: 0.5vw;
+    width: 100%;
 }
 
 .item-menu-cat {
@@ -13,4 +16,10 @@
     text-transform: uppercase;
     align-self: center;
     font-size: 1vw;
+}
+
+.item-menu-cat:hover {
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(71, 71, 71) 1px 0 15px;;
 }

@@ -9,13 +9,13 @@ import Footer from '../Footer/Footer';
 function ItemDetailContainer() {
 
   const { id } = useParams()
-  const [producto, setProducto] = useState([])
+  const [product, setProduct] = useState([])
   const [isLoading, setIsLoading] = useState(false)
 
   useEffect(()=> {
     setIsLoading(true)
     setTimeout(()=> {
-      getAllProducts().then((data) => setProducto((data).filter((i) => (i.id === id))))
+      getAllProducts().then((data) => setProduct((data).filter((i) => (i.id === id))))
       setIsLoading(false)
     }, 500)
   }, [])
@@ -24,7 +24,7 @@ function ItemDetailContainer() {
     <>
       <div className='item-detail-container'>
         {isLoading && <div className='container'><img src={loading} alt='loading' className='loadingImg'/> <p className='loading'> Loading... </p> </div>}
-        {producto && producto.map((p)=> <ItemDetail key={p.id} id={p.id} nombre={p.nombre} precio={p.precio} moneda={p.moneda} img={p.img} volAlc={p.volAlc} amargor={p.amargor} descripcion={p.descripcion} stock={p.stock} />)}
+        {product && product.map((p)=> <ItemDetail key={p.id} id={p.id} name={p.name} price={p.price} currency={p.currency} img={p.img} abv={p.abv} ibu={p.ibu} description={p.description} stock={p.stock} />)}
       </div>
       <Footer/>
     </>

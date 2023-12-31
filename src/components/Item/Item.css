@@ -28,5 +28,7 @@
     height: 2.5vw;
     margin-top: 2vw;
     background-color: black;
-    border-color: rgb(176, 138, 0);
+    border-color: rgba(255, 255, 255, 0.452);
+    border-width: 1px;
+    border-radius: 0.5vw;
 }

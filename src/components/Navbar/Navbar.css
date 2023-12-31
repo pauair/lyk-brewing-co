@@ -1,8 +1,10 @@
 .header {
     align-content: center;
+    width: 100%;
 }
 
 .navbar {
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     background-color: black;
@@ -23,5 +25,17 @@
     text-decoration: none;
     text-transform: uppercase;
     align-self: center;
-    font-size: 1.2vw;
+    font-size: 1.3vw;
+}
+
+.item-menu:hover {
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 5px 5px #594600;;
+}
+
+.item-menu:focus {
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 5px 5px rgb(89, 70, 0);
 }

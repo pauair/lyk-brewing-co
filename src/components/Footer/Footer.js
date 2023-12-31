@@ -18,7 +18,7 @@ function Footer() {
         </a>
 
       </div>
-      <p className="footer-p"> &copy; Copyright 2022. Todos los derechos reservados | Paula Airaudo </p>
+      <p className="footer-p"> &copy; Copyright 2022. All rights reserved | Paula Airaudo </p>
     </div>
   );
 }

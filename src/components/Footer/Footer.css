@@ -14,4 +14,10 @@
     margin: 1vw;
     width: 2.5vw;
     height: 2.5vw;
+    border-radius: 0.3vw;
+}
+
+.footer-img:hover {
+    box-shadow: 2px 3px 10px rgb(89, 70, 0);
+
 }

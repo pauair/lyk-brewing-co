@@ -9,11 +9,14 @@
 }
 
 .itemCountInput, .itemCountButton, .itemCountButtonAdd {
-    background-color: black;
     text-align: center;
     align-self: center;
     font-size: 0.9vw;
     font-weight: 500;
+    background-color: black;
+    border-color: rgba(255, 255, 255, 0.452);
+    border-width: 1px;
+    border-radius: 0.5vw;
 }
 
 .itemCountButton, .itemCountButtonAdd {

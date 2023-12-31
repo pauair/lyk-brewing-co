@@ -8,11 +8,11 @@ function CartItem(props) {
     
     return (
         <div className='cart-item-body'>
-            <img className='cart-item-img' src={require(`../../assets/${props.img}`)} alt={props.nombre} />
-            <h1 className='cart-item-name'>{props.nombre}</h1>
-            <p className='cart-item-specs'>{props.precio} {props.moneda}</p>
-            <p className='cart-item-specs'>Unidades: {props.qty}</p>
-            <button className='cart-item-btn' onClick={() => removeFromCart(props.id)}>Quitar</button>
+            <img className='cart-item-img' src={require(`../../assets/${props.img}`)} alt={props.name} />
+            <h1 className='cart-item-name'>{props.name}</h1>
+            <p className='cart-item-specs'>{props.price} {props.currency}</p>
+            <p className='cart-item-specs'>Units: {props.qty}</p>
+            <button className='cart-item-btn' onClick={() => removeFromCart(props.id)}>Remove</button>
         </div>
     );
 }

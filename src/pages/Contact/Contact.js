@@ -45,8 +45,8 @@ function Contact() {
           Swal.fire({
             position: 'center',
             icon: 'success',
-            titleText: `¡Gracias por contactarnos ${newName}!`,
-            text: `Te responderemos a la brevedad`,
+            titleText: `¡Thanks for contact us, ${newName}!`,
+            text: `We will get back to you shortly.`,
             showConfirmButton: false,
             timer: 4800
         })
@@ -56,7 +56,7 @@ function Contact() {
         Swal.fire({
           position: 'center',
           icon: 'error',
-          text: `¡Debes completar todos los campos!`,
+          text: `You must fill out all the fields!`,
           showConfirmButton: false,
           timer: 4500
       })
@@ -64,24 +64,27 @@ function Contact() {
     }
 
     return (
-      <div className='contact-div'>
-        <h2 className='contact-title'>CONTACTO</h2>
-        <p className='contact-p'>Si tienes alguna consulta o sugerencia, no dudes en contactarnos. Estamos a tus ordenes.</p>
+      <>
         <div className='contact-div'>
-                <form className='contact-form' onSubmit={submitHandler}>
-                    <label className='contact-form-label'> Nombre: </label>
-                    <input className='contact-form-input' type="text" id="name" value={newName} onChange={nameHandler}></input>
-                    <label className='contact-form-label'> Teléfono: </label>
-                    <input className='contact-form-input' type="text" id="phone" value={newPhone} onChange={phoneHandler}></input>
-                    <label className='contact-form-label'> Correo electrónico: </label>
-                    <input className='contact-form-input' type="text" id="email" value={newEmail} onChange={emailHandler}></input>
-                    <label className='contact-form-label'> Mensaje: </label>
-                    <textarea className='contact-form-input-area' type="text" id="message" value={newMessage} onChange={messageHandler}></textarea>
-                    <button className='contact-form-btn' type='submit'> ENVIAR </button>
-                </form>
-            </div>
-        <Footer/>
-      </div>
+          <p className='contact-p'>If you have any questions or suggestions, feel free to contact us. We are at your service.</p>
+          <div className='contact-div'>
+                  <form className='contact-form' onSubmit={submitHandler}>
+                      <label className='contact-form-label'> Full name: </label>
+                      <input className='contact-form-input' type="text" id="name" value={newName} onChange={nameHandler}></input>
+                      <label className='contact-form-label'> Phone number: </label>
+                      <input className='contact-form-input' type="text" id="phone" value={newPhone} onChange={phoneHandler}></input>
+                      <label className='contact-form-label'> Email Address: </label>
+                      <input className='contact-form-input' type="text" id="email" value={newEmail} onChange={emailHandler}></input>
+                      <label className='contact-form-label'> Message: </label>
+                      <textarea className='contact-form-input-area' type="text" id="message" value={newMessage} onChange={messageHandler}></textarea>
+                      <button className='contact-form-btn' type='submit'> SEND </button>
+                  </form>
+          </div>
+        </div>
+        <div>
+          <Footer/>
+        </div>
+      </>
     );
   }
   

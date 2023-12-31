@@ -1,16 +1,20 @@
 .contact-title {
     color: white;
     text-align: center;
-    padding: 3vw;
+    font-size: 3vw;
+    
 }
 
 .contact-div {
     text-align: center;
-    background-color: rgb(17, 17, 17);
+    background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.793)), url(../../assets/back-aboutus.jpg);
+    background-attachment: fixed;
 }
 
 .contact-p {
     color: white;
+    padding: 3vw;
+    text-shadow: 3px 3px 3px rgb(8, 8, 8);
 }
 
 .contact-form {
@@ -19,6 +23,7 @@
     margin: 7vw;
     padding: 2vw;
     background-color: black;
+    box-shadow: 0px -1px 20px rgb(89, 70, 0);
     width: 30%;
     height: 25%;
 }
@@ -46,5 +51,7 @@
     height: 2.5vw;
     margin: 1.5vw;
     background-color: black;
-    border-color: rgb(176, 138, 0);
+    border-color: rgba(255, 255, 255, 0.452);
+    border-width: 1px;
+    border-radius: 0.5vw;
 }

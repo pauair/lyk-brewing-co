@@ -1,5 +1,6 @@
 .visit-title {
     color: white;
+    font-size: 3vw;
     text-align: center;
     padding: 3vw;
 }
@@ -7,7 +8,8 @@
 .visit-container {
     text-align: center;
     height: 40vw;
-    background-color: rgb(17, 17, 17);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../../assets/back-visitus.jpg);
+    background-attachment: fixed;
 }
 
 .visit-p {

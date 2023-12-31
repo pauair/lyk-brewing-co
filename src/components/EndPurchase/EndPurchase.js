@@ -1,6 +1,6 @@
 import { useState, useContext, useEffect } from 'react';
 import Swal from 'sweetalert2'
-import { collection, addDoc, doc} from "firebase/firestore";
+import { collection, addDoc} from "firebase/firestore";
 import { db } from "../../services/FirebaseConfig"
 import { CartContext} from '../CartContext/CartContext';
 import './EndPurchase.css'
@@ -48,7 +48,9 @@ function EndPurchase() {
             Swal.fire({
                 position: 'center',
                 icon: 'error',
-                text: `¡Debes completar todos los campos!`,
+                text: `You must fill out all the fields!`,
+                background: '#101000',
+                color: '#ffffff',
                 showConfirmButton: false,
                 timer: 4500
             })
@@ -60,8 +62,11 @@ function EndPurchase() {
             Swal.fire({
                 position: 'center',
                 icon: 'success',
-                titleText: `¡Gracias por tu compra ${newName}!`,
-                text: `El código de tu pedido es: ${orderId}`,
+                width: 600,
+                background: '#363636',
+                color: '#ffffff',
+                titleText: `¡Thank you for your purchase ${newName}!`,
+                text: `The code for your order is: ${orderId}`,
                 showConfirmButton: false,
                 timer: 4800
             })
@@ -71,21 +76,21 @@ function EndPurchase() {
             clearCart()
             navigate("/")
         }
-    }, [orderId])
+    }, [orderId, clearCart, navigate, newName])
 
 
     return (
         <>
-            <h2 className='title'>FINALIZAR COMPRA</h2>
+            <h2 className='title'>END PURCHASE</h2>
             <div className='end-purchase-div'>
                 <form className='end-purchase-form' onSubmit={submitHandler}>
-                    <label className='end-purchase-form-label'> Nombre completo: </label>
+                    <label className='end-purchase-form-label'> Full name: </label>
                     <input className='end-purchase-form-input' type="text" id="name" value={newName} onChange={nameHandler}></input>
-                    <label className='end-purchase-form-label'> Teléfono: </label>
+                    <label className='end-purchase-form-label'> Phone number: </label>
                     <input className='end-purchase-form-input' type="text" id="phone" value={newPhone} onChange={phoneHandler}></input>
-                    <label className='end-purchase-form-label'> Correo electrónico: </label>
+                    <label className='end-purchase-form-label'> Email address: </label>
                     <input className='end-purchase-form-input' type="text" id="email" value={newEmail} onChange={emailHandler}></input>
-                    <button className='end-purchase-form-btn' type='submit'> Comprar </button>
+                    <button className='end-purchase-form-btn' type='submit'> BUY </button>
                 </form>
             </div>
         </>

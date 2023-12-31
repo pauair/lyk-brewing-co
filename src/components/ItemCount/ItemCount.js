@@ -6,21 +6,23 @@ function ItemCount({stock, onAdd}) {
 
     const [qty, setQty] = useState(0)
 
-    const suma = () => {
+    const sum = () => {
         if (qty < stock) {
             setQty(qty + 1)
         } else {
             Swal.fire({
                 position: 'center',
                 icon: 'warning',
-                text: `Quedan ${stock} unidades en stock.`,
+                background: '#101000',
+                color: '#ffffff',
+                text: `Remaining stock: ${stock} units`,
                 showConfirmButton: false,
                 timer: 1500
               })
         }
     }
 
-    const resta = () => {
+    const subtract = () => {
         if (qty > 0) {
             setQty(qty - 1)
         } 
@@ -31,7 +33,9 @@ function ItemCount({stock, onAdd}) {
             Swal.fire({
                 position: 'center',
                 icon: 'error',
-                text: `No hay unidades en stock por el momento`,
+                background: '#101000',
+                color: '#ffffff',
+                text: `Currently no stock available`,
                 showConfirmButton: false,
                 timer: 1500
               })
@@ -40,7 +44,9 @@ function ItemCount({stock, onAdd}) {
                 Swal.fire({
                     position: 'center',
                     icon: 'success',
-                    text: `Has agregado ${qty} unidades al carrito`,
+                    background: '#101000',
+                    color: '#ffffff',
+                    text: `You have added ${qty} units to the cart`,
                     showConfirmButton: false,
                     timer: 1500
                 })
@@ -50,7 +56,9 @@ function ItemCount({stock, onAdd}) {
                 Swal.fire({
                     position: 'center',
                     icon: 'error',
-                    text: `Debes elegir la cantidad de unidades`,
+                    background: '#101000',
+                    color: '#ffffff',
+                    text: `You must choose the quantity of units`,
                     showConfirmButton: false,
                     timer: 1500
                 })
@@ -60,10 +68,10 @@ function ItemCount({stock, onAdd}) {
 
     return (
         <div className='itemCount'>
-            <button className='itemCountButton' onClick={resta}> - </button>
+            <button className='itemCountButton' onClick={subtract}> - </button>
             <p className='itemCountInput'>{qty}</p>
-            <button className='itemCountButton' onClick={suma}> + </button>
-            <button className='itemCountButtonAdd' onClick={onAddHandler}> Agregar al carrito </button>
+            <button className='itemCountButton' onClick={sum}> + </button>
+            <button className='itemCountButtonAdd' onClick={onAddHandler}> Add to cart </button>
         </div>
     );
   }

@@ -1,4 +1,5 @@
 .products-container {
     height: 65vw;
-    background-color: rgb(17, 17, 17);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.653), rgba(0, 0, 0, 0.699)), url(../../assets/back-products.jpg);
+    background-attachment: fixed;
 }

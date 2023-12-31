@@ -5,10 +5,10 @@ function Item(props) {
 
   return (
     <div className='cardBody'>
-        <img className='cardImg' src={require(`../../assets/${props.img}`)} alt={props.nombre}/>
-        <h1 className='cardName'>{props.nombre}</h1>
-        <p className='cardPrice'>{props.precio} {props.moneda}</p>
-        <Link to={`/products/${props.id}`}> <button className='cardBtn'>Ver más</button> </Link>
+        <img className='cardImg' src={require(`../../assets/${props.img}`)} alt={props.name}/>
+        <h1 className='cardName'>{props.name}</h1>
+        <p className='cardPrice'>{props.price} {props.currency}</p>
+        <Link to={`/products/${props.id}`}> <button className='cardBtn'>See more</button> </Link>
     </div>
   );
 }

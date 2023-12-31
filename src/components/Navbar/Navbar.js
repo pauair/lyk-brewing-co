@@ -8,11 +8,11 @@ function Navbar() {
     <header className='header'>
       <nav>
         <ul className="navbar">
-          <NavLink to='/' className="item-logo"> <img src={logo} alt="logo" className="logo"/> </NavLink>
-          <NavLink to='/about' className='item-menu'> Nosotros </NavLink>
-          <NavLink to='/products/category/all' className='item-menu'> Productos </NavLink>
-          <NavLink to='/visit' className='item-menu'> Visita </NavLink>
-          <NavLink to='/contact' className='item-menu'> Contacto </NavLink>
+          <NavLink to='/' className='item-logo'> <img src={logo} alt="logo" className="logo"/> </NavLink>
+          <NavLink to='/about' className='item-menu'> About </NavLink>
+          <NavLink to='/products/category/all' className='item-menu'> Products </NavLink>
+          <NavLink to='/visit' className='item-menu'> Visit </NavLink>
+          <NavLink to='/contact' className='item-menu'> Contact </NavLink>
           <NavLink to='/cart'><CartWidget/></NavLink>
         </ul>
       </nav>

@@ -1,10 +1,10 @@
 import Item from '../Item/Item';
 import './ItemList.css';
 
-function ItemList({listaProd}) {
+function ItemList({listProd}) {
   return (
     <div className='container'>
-      {listaProd.map((p)=> <Item key={p.id} id={p.id} nombre={p.nombre} precio={p.precio} moneda={p.moneda} img={p.img}/>)}
+      {listProd.map((p)=> <Item key={p.id} id={p.id} name={p.name} price={p.price} currency={p.currency} img={p.img}/>)}
     </div>
   );
 }
