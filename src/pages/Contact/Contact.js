@@ -45,6 +45,8 @@ function Contact() {
           Swal.fire({
             position: 'center',
             icon: 'success',
+            background: '#363636',
+            color: '#ffffff',
             titleText: `¡Thanks for contact us, ${newName}!`,
             text: `We will get back to you shortly.`,
             showConfirmButton: false,
@@ -56,6 +58,8 @@ function Contact() {
         Swal.fire({
           position: 'center',
           icon: 'error',
+          background: '#363636',
+          color: '#ffffff',
           text: `You must fill out all the fields!`,
           showConfirmButton: false,
           timer: 4500

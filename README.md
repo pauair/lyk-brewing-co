@@ -1,23 +1,21 @@
-## Acerca de LYK BREWING CO:
+## About LYK BREWING CO:
 
-*Este proyecto fue creado por Paula Airaudo para el curso REACT de la plataforma Coderhouse.*
+*This project was created by Paula Airaudo for the REACT course on the Coderhouse platform.*
 
-Se trata de la implementación de un sitio web para una cervecería ficticia denominada "LYK Brewing Co."
+It involves the implementation of a website for a fictional brewery named "LYK Brewing Co."
 
-Tanto el logo, como el nombre del emprendimiento son de autoría propia. Así como las imágenes incluidas en el detalle de los productos.
-El resto de las fotografías fueron extraidas de diversos sitios web.
+Both the logo and the name of the venture are original creations, as are the images included in the product details.
+The rest of the photographs were sourced from various websites.
 
-## **Instalación:**
+## **Installation:**
 
-* Clonar el repositorio Github.
-* En la carpeta raíz, ejecutar el comando `npm install` para instalar todas las dependencias.
-* Ejecutar el comando `npm start` para iniciar el proyecto.
+* Clone the GitHub repository.
+* In the root folder, run the command npm install to install all dependencies.
+* Execute the command npm start to start the project.
 
 
-## **Navegación**
+## **Navigation**
 
-En el siguiente GIF puedes visualizar la navegación en el sitio:
+In the following GIF, you can visualize the navigation on the site:
 
 ![link](LYKBrewingCo.gif)
-
-
