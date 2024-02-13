@@ -19,7 +19,7 @@ function App() {
       <header>
         <Navbar />
           <Routes>
-            <Route exact path="/" element={<Home/>}> </Route>
+            <Route exact path="/lyk-brewing-co" element={<Home/>}> </Route>
             <Route exact path="/about" element={<AboutUs/>}> </Route>
             <Route exact path="/products/:id" element={<ItemDetailContainer/>}> </Route>
             <Route exact path="/products/category/:cat" element={<Products/>}> </Route>
