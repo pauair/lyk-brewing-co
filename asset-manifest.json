@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.b8ee6e6b.css",
-    "main.js": "/static/js/main.3491a618.js",
-    "static/js/787.34756f73.chunk.js": "/static/js/787.34756f73.chunk.js",
-    "static/media/home-img.gif": "/static/media/home-img.7b4979a8e35e2a73a8fc.gif",
-    "static/media/pack-deg.png": "/static/media/pack-deg.33bbe7026bd6d3361165.png",
-    "static/media/back-visitus.jpg": "/static/media/back-visitus.5e2b9cb2f38eb6655959.jpg",
-    "static/media/ipa.png": "/static/media/ipa.20b42a2b779c50281cee.png",
-    "static/media/red.png": "/static/media/red.7fff49de8268582b0ff8.png",
-    "static/media/blonde.png": "/static/media/blonde.fb22e9ced801aae1fa49.png",
-    "static/media/black.png": "/static/media/black.1ba6e9dc6ee1129b47f9.png",
-    "static/media/back-products.jpg": "/static/media/back-products.d62e7070ebf306b82a9d.jpg",
-    "static/media/brindis.jpg": "/static/media/brindis.a654cb3eff158bcba4c9.jpg",
-    "static/media/back-aboutus.jpg": "/static/media/back-aboutus.446cf8d644e1089b343c.jpg",
-    "static/media/company.jpg": "/static/media/company.9977feca56969e0a7936.jpg",
-    "static/media/loading.gif": "/static/media/loading.643ca93f3d490b698f16.gif",
-    "static/media/logo.png": "/static/media/logo.9b25db47a729e023bbb9.png",
-    "index.html": "/index.html",
-    "main.b8ee6e6b.css.map": "/static/css/main.b8ee6e6b.css.map",
-    "main.3491a618.js.map": "/static/js/main.3491a618.js.map",
-    "787.34756f73.chunk.js.map": "/static/js/787.34756f73.chunk.js.map"
+    "main.css": "/lyk-brewing-co/static/css/main.b8ee6e6b.css",
+    "main.js": "/lyk-brewing-co/static/js/main.1acaadc8.js",
+    "static/js/787.34756f73.chunk.js": "/lyk-brewing-co/static/js/787.34756f73.chunk.js",
+    "static/media/home-img.gif": "/lyk-brewing-co/static/media/home-img.7b4979a8e35e2a73a8fc.gif",
+    "static/media/pack-deg.png": "/lyk-brewing-co/static/media/pack-deg.33bbe7026bd6d3361165.png",
+    "static/media/back-visitus.jpg": "/lyk-brewing-co/static/media/back-visitus.5e2b9cb2f38eb6655959.jpg",
+    "static/media/ipa.png": "/lyk-brewing-co/static/media/ipa.20b42a2b779c50281cee.png",
+    "static/media/red.png": "/lyk-brewing-co/static/media/red.7fff49de8268582b0ff8.png",
+    "static/media/blonde.png": "/lyk-brewing-co/static/media/blonde.fb22e9ced801aae1fa49.png",
+    "static/media/black.png": "/lyk-brewing-co/static/media/black.1ba6e9dc6ee1129b47f9.png",
+    "static/media/back-products.jpg": "/lyk-brewing-co/static/media/back-products.d62e7070ebf306b82a9d.jpg",
+    "static/media/brindis.jpg": "/lyk-brewing-co/static/media/brindis.a654cb3eff158bcba4c9.jpg",
+    "static/media/back-aboutus.jpg": "/lyk-brewing-co/static/media/back-aboutus.446cf8d644e1089b343c.jpg",
+    "static/media/company.jpg": "/lyk-brewing-co/static/media/company.9977feca56969e0a7936.jpg",
+    "static/media/loading.gif": "/lyk-brewing-co/static/media/loading.643ca93f3d490b698f16.gif",
+    "static/media/logo.png": "/lyk-brewing-co/static/media/logo.9b25db47a729e023bbb9.png",
+    "index.html": "/lyk-brewing-co/index.html",
+    "main.b8ee6e6b.css.map": "/lyk-brewing-co/static/css/main.b8ee6e6b.css.map",
+    "main.1acaadc8.js.map": "/lyk-brewing-co/static/js/main.1acaadc8.js.map",
+    "787.34756f73.chunk.js.map": "/lyk-brewing-co/static/js/787.34756f73.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b8ee6e6b.css",
-    "static/js/main.3491a618.js"
+    "static/js/main.1acaadc8.js"
   ]
 }
