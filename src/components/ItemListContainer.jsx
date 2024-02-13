@@ -1,9 +1,8 @@
 import { useEffect, useState } from 'react';
 import { useParams} from 'react-router-dom';
-import { getAllProducts } from '../../services/FirebaseConfig.js'
-import './ItemListContainer.css';
-import ItemList from '../ItemList/ItemList';
-import loading from '../../assets/loading.gif';
+import { getAllProducts } from '../services/FirebaseConfig.js'
+import ItemList from './ItemList.jsx';
+import loading from '../assets/loading.gif';
 
 function ItemListContainer() {
 
@@ -24,10 +23,10 @@ function ItemListContainer() {
     }, [cat])
 
   return (
-    <div>
-      {isLoading && <div className='container'><img src={loading} alt='loading' className='loadingImg'/> <p className='loading'> Loading... </p> </div>}
-      <ItemList listProd={products}/>
-    </div>
+      <div>
+          {isLoading && <div className='bg-black flex flex-col justify-center min-h-screen z-2'><img src={loading} alt='loading' className='self-center w-16 m-4'/> <p className='text-center uppercase text-lg'> Loading... </p> </div>}
+          <ItemList listProd={products}/>
+      </div>
   );
 }
 

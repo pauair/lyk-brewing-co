@@ -1,14 +1,13 @@
-import './Products.css'
-import NavCat from '../../components/NavCat/NavCat';
-import ItemListContainer from '../../components/ItemListContainer/ItemListContainer';
-import Footer from '../../components/Footer/Footer';
+import NavCat from '../../components/NavCat';
+import ItemListContainer from '../../components/ItemListContainer';
+import Footer from '../../components/Footer';
 
 function Products() {
 
     return (
       <>
         <NavCat/>
-        <div className='products-container'>
+        <div className='bg-black flex flex-col min-h-screen'>
           <ItemListContainer/>
         </div>
         <Footer/>

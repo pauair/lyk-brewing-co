@@ -1,9 +1,8 @@
 import { useState, useContext, useEffect } from 'react';
 import Swal from 'sweetalert2'
-import { collection, addDoc} from "firebase/firestore";
-import { db } from "../../services/FirebaseConfig"
-import { CartContext} from '../CartContext/CartContext';
-import './EndPurchase.css'
+import { collection, addDoc } from "firebase/firestore";
+import { db } from "../services/FirebaseConfig"
+import { CartContext } from './CartContext';
 import { useNavigate } from 'react-router-dom';
 
 function EndPurchase() {
@@ -80,21 +79,20 @@ function EndPurchase() {
 
 
     return (
-        <>
-            <h2 className='title'>END PURCHASE</h2>
-            <div className='end-purchase-div'>
-                <form className='end-purchase-form' onSubmit={submitHandler}>
-                    <label className='end-purchase-form-label'> Full name: </label>
-                    <input className='end-purchase-form-input' type="text" id="name" value={newName} onChange={nameHandler}></input>
-                    <label className='end-purchase-form-label'> Phone number: </label>
-                    <input className='end-purchase-form-input' type="text" id="phone" value={newPhone} onChange={phoneHandler}></input>
-                    <label className='end-purchase-form-label'> Email address: </label>
-                    <input className='end-purchase-form-input' type="text" id="email" value={newEmail} onChange={emailHandler}></input>
-                    <button className='end-purchase-form-btn' type='submit'> BUY </button>
-                </form>
-            </div>
-        </>
+        <div className='py-8 px-8 text-center justify-items-center content-center bg-black min-h-screen lg:px-96'>
+            <h2 className= 'text-white font-bold text-2xl p-6 mb-4 text-center lg:text-3xl'>END PURCHASE</h2>
+            <form className='bg-black flex flex-col border border-gray-700 rounded-md p-14 lg:px-16' onSubmit={submitHandler}>
+                <label className='text-left p-2 block lg:mx-10'> Full name: </label>
+                <input className='text-black p-2 mb-8 rounded-md lg:mx-10' type="text" id="name" value={newName} onChange={nameHandler}></input>
+                <label className='text-left p-2 block lg:mx-10'> Phone number: </label>
+                <input className='text-black p-2 mb-8 rounded-md lg:mx-10' type="text" id="phone" value={newPhone} onChange={phoneHandler}></input>
+                <label className='text-left p-2 block lg:mx-10'> Email address: </label>
+                <input className='text-black p-2 mb-8 rounded-md lg:mx-10' type="text" id="email" value={newEmail} onChange={emailHandler}></input>
+                <br/>
+                <button className='bg-green-800 text-base m-2 mx-14 p-2 px-6 border border-green-800 rounded-md lg:m-4 lg:mx-36 lg:p-3' type='submit'> BUY </button>
+            </form>
+        </div>
     );
-  }
-  
-  export default EndPurchase;
+}
+
+export default EndPurchase;

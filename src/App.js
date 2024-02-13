@@ -1,15 +1,16 @@
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
-import { CartProvider } from './components/CartContext/CartContext';
-import Navbar from './components/Navbar/Navbar';
-import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
+import { CartProvider } from './components/CartContext';
+import Navbar from './components/Navbar';
+import ItemDetailContainer from './components/ItemDetailContainer';
 import Products from './pages/Products/Products';
 import Home from './pages/Home/Home';
 import AboutUs from './pages/AboutUs/AboutUs';
 import Contact from './pages/Contact/Contact';
 import Visit from './pages/Visit/Visit';
-import CartView from './components/CartView/CartView';
-import EndPurchase from './components/EndPurchase/EndPurchase';
+import CartView from './components/CartView';
+import EndPurchase from './components/EndPurchase';
+
 
 function App() {
   return (

@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import Swal from 'sweetalert2'
-import './ItemCount.css';
 
 function ItemCount({stock, onAdd}) {
 
@@ -67,11 +66,13 @@ function ItemCount({stock, onAdd}) {
     }
 
     return (
-        <div className='itemCount'>
-            <button className='itemCountButton' onClick={subtract}> - </button>
-            <p className='itemCountInput'>{qty}</p>
-            <button className='itemCountButton' onClick={sum}> + </button>
-            <button className='itemCountButtonAdd' onClick={onAddHandler}> Add to cart </button>
+        <div className='flex flex-col bg-black justify-center h-24 w-52'>
+            <div className='flex flex-row justify-center content-center'>
+                <button className='text-xs text-center border rounded-md w-6 h-6' onClick={subtract}> - </button>
+                <p className='text-base text-center w-9 h-9'>{qty}</p>
+                <button className='text-xs text-center border rounded-md w-6 h-6' onClick={sum}> + </button>
+            </div>
+            <button className='bg-green-800 text-xs m-2 mx-12 p-1 px-6 border border-green-700 rounded-md lg:my-2 lg:mx-12 lg:px-6 lg:self-end' onClick={onAddHandler}> Add to cart </button>
         </div>
     );
   }

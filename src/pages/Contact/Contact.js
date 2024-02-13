@@ -1,10 +1,9 @@
-import './Contact.css'
 import { useState } from 'react';
 import Swal from 'sweetalert2';
 import { collection, addDoc} from "firebase/firestore";
 import { db } from "../../services/FirebaseConfig"
 import { useNavigate } from 'react-router-dom';
-import Footer from '../../components/Footer/Footer';
+import Footer from '../../components/Footer';
 
 function Contact() {
 
@@ -69,21 +68,19 @@ function Contact() {
 
     return (
       <>
-        <div className='contact-div'>
-          <p className='contact-p'>If you have any questions or suggestions, feel free to contact us. We are at your service.</p>
-          <div className='contact-div'>
-                  <form className='contact-form' onSubmit={submitHandler}>
-                      <label className='contact-form-label'> Full name: </label>
-                      <input className='contact-form-input' type="text" id="name" value={newName} onChange={nameHandler}></input>
-                      <label className='contact-form-label'> Phone number: </label>
-                      <input className='contact-form-input' type="text" id="phone" value={newPhone} onChange={phoneHandler}></input>
-                      <label className='contact-form-label'> Email Address: </label>
-                      <input className='contact-form-input' type="text" id="email" value={newEmail} onChange={emailHandler}></input>
-                      <label className='contact-form-label'> Message: </label>
-                      <textarea className='contact-form-input-area' type="text" id="message" value={newMessage} onChange={messageHandler}></textarea>
-                      <button className='contact-form-btn' type='submit'> SEND </button>
-                  </form>
-          </div>
+        <div className='py-8 px-8 text-center justify-items-center content-center bg-black min-h-screen lg:px-96'>
+            <p className='animate__animated animate__fadeIn p-6 pb-12 text-md lg:p-12'>If you have any questions or suggestions, feel free to contact us. <br/> We are at your service.</p>
+            <form className='animate__animated animate__fadeIn bg-black flex flex-col border border-gray-700 rounded-md m-3 p-10 lg:m-0 lg:p-14 lg:px-16' onSubmit={submitHandler}>
+                <label className='text-left p-2 block lg:mx-10'> Full name: </label>
+                <input className='text-black p-2 mb-4 rounded-md lg:mx-10' type="text" id="name" value={newName} onChange={nameHandler}></input>
+                <label className='text-left p-2 block lg:mx-10'> Phone number: </label>
+                <input className='text-black p-2 mb-4 rounded-md lg:mx-10' type="text" id="phone" value={newPhone} onChange={phoneHandler}></input>
+                <label className='text-left p-2 block lg:mx-10'> Email Address: </label>
+                <input className='text-black p-2 mb-4 rounded-md lg:mx-10' type="text" id="email" value={newEmail} onChange={emailHandler}></input>
+                <label className='text-left p-2 block lg:mx-10'> Message: </label>
+                <textarea className='text-black p-2 mb-4 rounded-md lg:mx-10' type="text" id="message" value={newMessage} onChange={messageHandler}></textarea>
+                <button className='bg-green-800 text-base m-2 mx-14 p-2 px-6 border border-green-00 rounded-md lg:m-4 lg:mx-10 lg:px-6 lg:self-end' type='submit'> SEND </button>
+            </form>
         </div>
         <div>
           <Footer/>

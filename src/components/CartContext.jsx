@@ -13,7 +13,7 @@ export const CartProvider = ({defaultValue = [], children}) => {
         setCart([])
     }
 
-    const addToCart = (item, qty) => {
+    const addToCart = (item, qty, price, currency) => {
         if (isInCart(item.id)) {
             const newCart = [...cart]
             for (const i of newCart) {
@@ -23,7 +23,7 @@ export const CartProvider = ({defaultValue = [], children}) => {
             }
             setCart(newCart)
         } else {
-            setCart([...cart, {item: item, qty: qty}])
+            setCart([...cart, {item: item, qty: qty, price:price, currency:currency}])
         }   
     }
 
