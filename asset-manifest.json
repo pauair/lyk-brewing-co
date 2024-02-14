@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/lyk-brewing-co/static/css/main.b8ee6e6b.css",
-    "main.js": "/lyk-brewing-co/static/js/main.1386b219.js",
+    "main.css": "/lyk-brewing-co/static/css/main.c7da8776.css",
+    "main.js": "/lyk-brewing-co/static/js/main.c07b39f9.js",
     "static/js/787.34756f73.chunk.js": "/lyk-brewing-co/static/js/787.34756f73.chunk.js",
     "static/media/home-img.webp": "/lyk-brewing-co/static/media/home-img.6acd1bc42193b3abc328.webp",
     "static/media/pack-deg.webp": "/lyk-brewing-co/static/media/pack-deg.94e17ae5b91cbc528583.webp",
@@ -9,7 +9,7 @@
     "static/media/ipa.webp": "/lyk-brewing-co/static/media/ipa.8d918c08458e1acbc7f0.webp",
     "static/media/blonde.webp": "/lyk-brewing-co/static/media/blonde.d75aafb03b9c58144359.webp",
     "static/media/black.webp": "/lyk-brewing-co/static/media/black.589a839b69898489162e.webp",
-    "static/media/back-aboutus.webp": "/lyk-brewing-co/static/media/back-aboutus.5ac631bf412c5c945db3.webp",
+    "static/media/bg-aboutus.webp": "/lyk-brewing-co/static/media/bg-aboutus.5ac631bf412c5c945db3.webp",
     "static/media/brindis.jpg": "/lyk-brewing-co/static/media/brindis.a654cb3eff158bcba4c9.jpg",
     "static/media/brindis.webp": "/lyk-brewing-co/static/media/brindis.85efa409aa4df1504432.webp",
     "static/media/company.webp": "/lyk-brewing-co/static/media/company.aaeb8d2548e0089b9666.webp",
@@ -22,12 +22,12 @@
     "static/media/youtube-img.webp": "/lyk-brewing-co/static/media/youtube-img.34493370f3c311587bc2.webp",
     "static/media/instagram-img.webp": "/lyk-brewing-co/static/media/instagram-img.1625e2c8d05798e021f2.webp",
     "static/media/facebook-img.webp": "/lyk-brewing-co/static/media/facebook-img.898f36acda8a995e93c6.webp",
-    "main.b8ee6e6b.css.map": "/lyk-brewing-co/static/css/main.b8ee6e6b.css.map",
-    "main.1386b219.js.map": "/lyk-brewing-co/static/js/main.1386b219.js.map",
+    "main.c7da8776.css.map": "/lyk-brewing-co/static/css/main.c7da8776.css.map",
+    "main.c07b39f9.js.map": "/lyk-brewing-co/static/js/main.c07b39f9.js.map",
     "787.34756f73.chunk.js.map": "/lyk-brewing-co/static/js/787.34756f73.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b8ee6e6b.css",
-    "static/js/main.1386b219.js"
+    "static/css/main.c7da8776.css",
+    "static/js/main.c07b39f9.js"
   ]
 }
