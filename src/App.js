@@ -10,6 +10,7 @@ import Contact from './pages/Contact/Contact';
 import Visit from './pages/Visit/Visit';
 import CartView from './components/CartView';
 import EndPurchase from './components/EndPurchase';
+import Authentication from './pages/Authentication/Authentication';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
             <Route exact path="/contact" element={<Contact/>}> </Route>
             <Route path="/cart" element={<CartView/>}> </Route>
             <Route path="/endPurchase" element={<EndPurchase/>}> </Route>
+            <Route path="/auth" element={<Authentication/>}> </Route>
           </Routes>
       </header>
       </CartProvider>
