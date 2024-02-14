@@ -19,7 +19,7 @@ function ItemDetailContainer() {
   }, [id])
 
   return (
-    <div className='bg-black flex flex-wrap justify-center min-h-screen'>
+    <div className='bg-pages flex flex-wrap justify-center min-h-screen'>
         {isLoading && <div className='bg-black flex flex-col justify-center z-2 h-screen'><img src={loading} alt='loading' className='self-center w-16 m-4'/> <p className='self-center w-16 m-4'> Loading... </p> </div>}
         {product && product.map((p)=> <ItemDetail key={p.id} id={p.id} name={p.name} price={p.price} currency={p.currency} img={p.img} abv={p.abv} ibu={p.ibu} description={p.description} stock={p.stock} />)}
       </div>

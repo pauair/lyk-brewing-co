@@ -68,8 +68,8 @@ function Contact() {
 
     return (
       <>
-        <div className='py-8 px-8 text-center justify-items-center content-center bg-black min-h-screen lg:px-96'>
-            <p className='animate__animated animate__fadeIn p-6 pb-12 text-md lg:p-12'>If you have any questions or suggestions, feel free to contact us. <br/> We are at your service.</p>
+        <div className='py-8 px-8 text-center justify-items-center content-center bg-pages min-h-screen lg:px-96'>
+            <p className='animate__animated animate__fadeIn p-6 pb-12 text-md lg:py-16 lg:text-lg'>If you have any questions or suggestions, feel free to contact us. <br/> We are at your service.</p>
             <form className='animate__animated animate__fadeIn bg-black flex flex-col border border-gray-700 rounded-md m-3 p-10 lg:m-0 lg:p-14 lg:px-16' onSubmit={submitHandler}>
                 <label className='text-left p-2 block lg:mx-10'> Full name: </label>
                 <input className='text-black p-2 mb-4 rounded-md lg:mx-10' type="text" id="name" value={newName} onChange={nameHandler}></input>

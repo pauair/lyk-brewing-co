@@ -24,7 +24,7 @@ function ItemListContainer() {
 
   return (
       <div>
-          {isLoading && <div className='bg-black flex flex-col justify-center min-h-screen z-2'><img src={loading} alt='loading' className='self-center w-16 m-4'/> <p className='text-center uppercase text-lg'> Loading... </p> </div>}
+          {isLoading && <div className='flex flex-col justify-center min-h-screen z-2'><img src={loading} alt='loading' className='self-center w-16 m-4'/> <p className='text-center uppercase text-lg'> Loading... </p> </div>}
           <ItemList listProd={products}/>
       </div>
   );

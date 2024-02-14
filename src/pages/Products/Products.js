@@ -7,7 +7,7 @@ function Products() {
     return (
       <>
         <NavCat/>
-        <div className='bg-black flex flex-col min-h-screen'>
+        <div className='bg-pages flex flex-col min-h-screen'>
           <ItemListContainer/>
         </div>
         <Footer/>
