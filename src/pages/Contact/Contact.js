@@ -51,7 +51,7 @@ function Contact() {
             showConfirmButton: false,
             timer: 4800
         })
-        navigate("/")
+        navigate("/lyk-brewing-co")
         })
       } else {
         Swal.fire({

@@ -10,10 +10,10 @@ function EndPurchase() {
     let navigate = useNavigate()
     const { total, cart, clearCart } = useContext(CartContext)
 
-    const [newName, setNewName] = useState("")
-    const [newPhone, setNewPhone] = useState("")
-    const [newEmail, setNewEmail] = useState("")
-    const [orderId, setOrderId] = useState("")
+    const [newName, setNewName] = useState('')
+    const [newPhone, setNewPhone] = useState('')
+    const [newEmail, setNewEmail] = useState('')
+    const [orderId, setOrderId] = useState('')
 
     const nameHandler = (event) => {
         setNewName(event.target.value)
@@ -29,7 +29,7 @@ function EndPurchase() {
 
     const submitHandler = (event) => {
         event.preventDefault();
-        const ordersCollections = collection(db, "orders")
+        const ordersCollections = collection(db, 'orders')
         const newBuyer = {
             name: newName,
             phone: newPhone,
@@ -38,10 +38,15 @@ function EndPurchase() {
         const order = {
             buyer: newBuyer,
             total: total,
-            items: cart,
+            items: JSON.stringify(cart),
             date: Date(),
         }
         if (newName && newPhone && newEmail) {
+            console.log(newName);
+            console.log(newEmail);
+            console.log(newPhone);
+            console.log(total);
+            console.log(order);
             addDoc(ordersCollections, order).then((doc) => setOrderId(doc.id));
         } else {
             Swal.fire({
@@ -69,17 +74,17 @@ function EndPurchase() {
                 showConfirmButton: false,
                 timer: 4800
             })
-            setNewName("")
-            setNewPhone("")
-            setNewEmail("")
+            setNewName('')
+            setNewPhone('')
+            setNewEmail('')
             clearCart()
-            navigate("/")
+            navigate('/lyk-brewing-co')
         }
     }, [orderId, clearCart, navigate, newName])
 
 
     return (
-        <div className='py-8 px-8 text-center justify-items-center content-center bg-black min-h-screen lg:px-96'>
+        <div className='py-8 px-8 text-center justify-items-center content-center bg-pages min-h-screen lg:px-96'>
             <h2 className= 'text-white font-bold text-2xl p-6 mb-4 text-center lg:text-3xl'>END PURCHASE</h2>
             <form className='bg-black flex flex-col border border-gray-700 rounded-md p-14 lg:px-16' onSubmit={submitHandler}>
                 <label className='text-left p-2 block lg:mx-10'> Full name: </label>

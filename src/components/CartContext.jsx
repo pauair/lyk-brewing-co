@@ -2,9 +2,9 @@ import { createContext, useState } from "react";
 
 export const CartContext = createContext({})
 
-const {Provider} = CartContext
+const { Provider } = CartContext
 
-export const CartProvider = ({defaultValue = [], children}) => {
+export const CartProvider = ({ defaultValue = [], children }) => {
 
     const [cart, setCart] = useState(defaultValue)
     const [total, setTotal] = useState(0)
@@ -23,8 +23,8 @@ export const CartProvider = ({defaultValue = [], children}) => {
             }
             setCart(newCart)
         } else {
-            setCart([...cart, {item: item, qty: qty, price:price, currency:currency}])
-        }   
+            setCart([...cart, { item: item, qty: qty, price: price, currency: currency }])
+        }
     }
 
     const isInCart = (id) => {
@@ -44,7 +44,7 @@ export const CartProvider = ({defaultValue = [], children}) => {
 
     const totalPrice = () => {
         let total = 0
-        cart.forEach((i) => (total = total + (i.item.price)*(i.qty)))
+        cart.forEach((i) => (total = total + (i.item.price) * (i.qty)))
         setTotal(total)
         return total
     }
