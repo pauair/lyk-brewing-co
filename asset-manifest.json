@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/lyk-brewing-co/static/css/main.c7da8776.css",
-    "main.js": "/lyk-brewing-co/static/js/main.c07b39f9.js",
+    "main.js": "/lyk-brewing-co/static/js/main.cf72df2c.js",
     "static/js/787.34756f73.chunk.js": "/lyk-brewing-co/static/js/787.34756f73.chunk.js",
     "static/media/home-img.webp": "/lyk-brewing-co/static/media/home-img.6acd1bc42193b3abc328.webp",
     "static/media/pack-deg.webp": "/lyk-brewing-co/static/media/pack-deg.94e17ae5b91cbc528583.webp",
@@ -23,11 +23,11 @@
     "static/media/instagram-img.webp": "/lyk-brewing-co/static/media/instagram-img.1625e2c8d05798e021f2.webp",
     "static/media/facebook-img.webp": "/lyk-brewing-co/static/media/facebook-img.898f36acda8a995e93c6.webp",
     "main.c7da8776.css.map": "/lyk-brewing-co/static/css/main.c7da8776.css.map",
-    "main.c07b39f9.js.map": "/lyk-brewing-co/static/js/main.c07b39f9.js.map",
+    "main.cf72df2c.js.map": "/lyk-brewing-co/static/js/main.cf72df2c.js.map",
     "787.34756f73.chunk.js.map": "/lyk-brewing-co/static/js/787.34756f73.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c7da8776.css",
-    "static/js/main.c07b39f9.js"
+    "static/js/main.cf72df2c.js"
   ]
 }
