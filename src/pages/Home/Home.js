@@ -1,5 +1,5 @@
 import 'animate.css';
-import home from '../../assets/home-img.gif'
+import home from '../../assets/home-img.webp'
 import Footer from '../../components/Footer';
 
 function Home() {

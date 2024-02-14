@@ -1,6 +1,6 @@
-import facebookImg from '../assets/facebook-img.png';
-import instagramImg from '../assets/instagram-img.png';
-import youtubeImg from '../assets/youtube-img.png';
+import facebookImg from '../assets/facebook-img.webp';
+import instagramImg from '../assets/instagram-img.webp';
+import youtubeImg from '../assets/youtube-img.webp';
 
 function Footer() {
   return (

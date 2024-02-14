@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import cartImg from '../assets/cartImg.png'
+import cartImg from '../assets/cartImg.webp'
 import { CartContext } from './CartContext';
 
 function CartWidget() {
